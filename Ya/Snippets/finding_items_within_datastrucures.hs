@@ -10,7 +10,7 @@ import "base" System.IO (putStr, print)
 instance Setoid AR Integer where
  equality (These x y) = if x == y then That y else This (These x y)
 
-exact sample current = Continue `la` Interrupt `li` sample `hd'q` current
+exact sample current = Continue `la` Interrupt `li_` sample `lu'q` current
 
 found x = print "[SUCCESS] Item has been found: " `yuk` Await `hv` print x
 
