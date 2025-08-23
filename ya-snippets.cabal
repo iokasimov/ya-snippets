@@ -7,6 +7,13 @@ build-type: Simple
 extra-source-files: README.md
 cabal-version: >=1.10
 
+executable list_concatenation
+  main-is: Ya/Snippets/list_concatenation.hs
+  build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, base, ghc-prim
+  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  default-language: Haskell2010
+  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+
 executable finding_an_element_by_iteration
   main-is: Ya/Snippets/finding_an_element_by_iteration.hs
   build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, base, ghc-prim

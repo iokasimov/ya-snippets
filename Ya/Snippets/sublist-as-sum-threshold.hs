@@ -10,7 +10,7 @@ subtract x total = total - x
 
 limit (These counter result) = if 0 >= counter then Break result else Valid counter
 
-step x = intro @(Stops (List Integer) `JNT` State (List Integer `P` Integer)) Unit
+step x = intro @(Stops `T'I` List Integer `JNT` State `T'I` List Integer `P` Integer) Unit
  `yuk____` Apply `ha` State `hv__` Event `hv_` get `ha` subtract x `ha_` Scope `hv` at @Integer
   `lu__'yp` Apply `ha` State `hv__` Event `hv_` get `ha` that `ha` push x `ha_` Scope `hv` at @(List Integer)
  `yok____` Check `ha` limit
