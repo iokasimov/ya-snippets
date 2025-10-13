@@ -17,8 +17,8 @@ boolean_and_integer =
 data Minutes
 data Seconds
 
-minutes_integer_and_seconds_integer =
- Tag @Minutes @Integer 12345 `lu` Tag @Seconds @Integer 6789
+-- minutes_integer_and_seconds_integer =
+--  Tag @Minutes @Integer 12345 `lu` Tag @Seconds @Integer 6789
 
 print_integer = putStrLn `ha` show
 
@@ -33,5 +33,5 @@ main = do
  integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Integer `ho` that `li` 54321 `yi` at @Integer `ho` this `ho` print_integer
  integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Boolean `ho` that `li` by True `yi` at @Boolean `ho` this `ho` print_boolean
 
- minutes_integer_and_seconds_integer `yi` at @(Minutes # Integer) `ho` this `ho'he` print_integer
- minutes_integer_and_seconds_integer `yi` at @(Seconds # Integer) `ho` this `ho'he` print_integer
+ -- minutes_integer_and_seconds_integer `yi` at @(Minutes # Integer) `ho` this `ho'he` print_integer
+ -- minutes_integer_and_seconds_integer `yi` at @(Seconds # Integer) `ho` this `ho'he` print_integer
