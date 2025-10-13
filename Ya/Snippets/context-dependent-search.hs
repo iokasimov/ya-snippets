@@ -3,26 +3,23 @@ import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 
-import "base" Prelude (Eq (..), Integer, (+), print, Show (..))
+around :: Maybe (Alone (Unit `AR` Latin) `P` Alone (Unit `AR` Latin) `S` Alone (Unit `AR` Latin)) `P` (Unit `AR` Latin)
+around = shift @Alone @List `hv'he` Left `ho` this
+ `lo'yp'yo'q` shift @Alone @List `hv'he` Right `ho` this `ho` Check
+ `lo` at @(Alone _) `ho` this `ho'he` is
 
-instance Setoid AR Integer where
- equality (These x y) = if x == y then That y else This (These x y)
+handle = Wrong `hu` Going `la` Exist `hu` Break `la` Empty `hu` Going `ha__` not
 
-deriving instance (Show l, Show r) => Show (l `S` r)
-deriving instance (Show l, Show r) => Show (T'I'II S l r)
-
-sided x = None `la` Some `ha` this `ha` top `ha__` shaft `hv` x `ho` this
-
-sides = Continue `la` Break
- `ha__` sided `hv'he` Passed
-  `lo'q` sided `hv'he` Future
-
-found x = print "[SUCCESS] Item has been found: "
- `yuk` Await `ha` print `hv` x
-
-havent _ = print "[FAILURE] Item has not been found!"
-
--- TODO: right now it returns one of those heinghbor item
-main = is @(List Integer) [5,2,7,3,6,8,6,5,1,4]
- `kyokl` Range @List `ha` Forth `ha` Check `ha` sides
+main = is @(List (Unit `AR` Latin)) `hv` [A,B,C,D,F,G,F,D,I,I]
+ `kyokl` Range `ha` Forth `ha` Check
+ `ha___` around `ho'hd` handle
  `yi___` found `la` havent
+ `yokl_` Forth `ha` Await `ha` output
+
+type String = List ASCII
+
+found x = "[SUCCESS] Item has been found: " `yi` is @String
+ `lu` intro @List `ha` Glyph `ha` Letter `ha` Upper `hv'he` x
+ `yi` Merge `ho` to @List
+
+havent _ = "[FAILURE] Item has not been found!" `yi` is @String
