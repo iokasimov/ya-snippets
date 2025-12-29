@@ -1,6 +1,7 @@
 packages: .
   ../ya/ya.cabal
   ../ya-world/ya-world.cabal
+  ../ya-world-async/ya-world-async.cabal
   ../ya-ascii/ya-ascii.cabal
   ../ya-literal/ya-literal.cabal
   ../ya-console/ya-console.cabal

@@ -69,3 +69,10 @@ executable moving-coordinates
   default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
   default-language: Haskell2010
   ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+
+executable asynchronous-computations
+  main-is: Ya/Snippets/asynchronous-computations.hs
+  build-depends: ya, ya-world, ya-world-async, ya-ascii, ya-literal, ya-console, base
+  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  default-language: Haskell2010
+  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
