@@ -7,7 +7,7 @@ import Ya.Console
 import Prelude ((*))
 import Control.Concurrent (threadDelay)
 
-delay s x = threadDelay (s * 1000000) `yo` x 
+delay s x = threadDelay (s * 1000000) `yo` x
 
 print x = x `yokl` Apply `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
 
