@@ -7,12 +7,13 @@ type String = Nonempty List ASCII
 
 print x = x `yokl` Forth `ha` Await `ha` output
 
-found x = "[SUCCESS] Item has been found: "
- `yi` print `ha` is @String `yuk` Await `ha` print `hv` x `yu` Unit
+found x = print `ha` is @String 
+ `hc_` "[SUCCESS] Item has been found: "
+ `yuk` Await `ha` print `hc` x `yu` Unit
 
-havent _ = "[FAILURE] Item has not been found!"
- `yi` print `ha` is @String `yu` Unit
+havent _ = print `ha` is @String
+ `hc` "[FAILURE] Item has not been found!"
+ `yu` Unit
 
-main = [A,B,C,D,E,F,G]
- `yokl` Forth @List `ha` Check `ha` Stops `ha` not `ha` (`lu'q` F)
- `yi__` found `ha` Alone `ha` Glyph `ha` Letter `ha` Upper `ha` (`hv` Unit) `la` havent
+main = found `ha` Alone `ha` Glyph `ha` Letter `ha` Upper `ha` (`hc` Unit) `hs_` havent
+ `hc____` [A,B,C,D,E,F,G] `yokl` Forth @List `ha` Check `ha` Stops `ha` not `ha` (`hjd'q` F)

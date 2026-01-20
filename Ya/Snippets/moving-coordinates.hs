@@ -24,10 +24,10 @@ type Position = Integer `P` Integer
 -- pattern Right e = That e
 
 -- move :: Direction `AR___` Position `AR_` Position
--- move = ((+) `ho` (Scope `hv` at @Ordinate) `ho` (Scope `hv` at @Ordinate))
---  `la` Down `hu` identity
---  `la` Left `hu` identity
---  `la` Right `hu` identity
+-- move = ((+) `ho` (Scope `hc` at @Ordinate) `ho` (Scope `hc` at @Ordinate))
+--  `hs_` Down `hu` identity
+--  `hs_` Left `hu` identity
+--  `hs_` Right `hu` identity
 
 -- pattern Ordinata e = This e
 -- pattern Abscissa e = This e
@@ -40,9 +40,9 @@ pattern Right e = That (This e)
 pattern Left e = That (That e)
 
 move :: Direction `AR___` Position `AR` Position
-move = Up `hu` (`yoi` (+) 1) `la` Down `hu` (`yoi` (-) 1)
- `la_` Right `hu` (`yio` (+) 1) `la` Left `hu` (`yio` (-) 1)
+move = Up `hu` (`yoi` (+) 1) `hs_` Down `hu` (`yoi` (-) 1)
+ `hs__` Right `hu` (`yio` (+) 1) `hs_` Left `hu` (`yio` (-) 1)
 
-test = 3 `lu` 4 `yi` move `hv` Up Unit
+test = move `hc'st` Up `hc___` 3 `hjd` 4
 
 main = print "typechecked"

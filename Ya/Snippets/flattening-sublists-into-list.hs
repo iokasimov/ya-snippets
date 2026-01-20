@@ -8,12 +8,12 @@ import "base" GHC.Num (Integer)
 import "base" System.IO (print)
 
 list_of_lists_example =
- [[1,2,3],[4,5,6],[7,8,9]]
-  `yi` is @(List `T'I` List Integer)
+ is @(List `T'I` List Integer)
+ `hc` [[1,2,3],[4,5,6],[7,8,9]]
 
 list_of_lists_with_hole_example =
- [[1,2,3],[],[4,5,6],[7,8,9]]
-  `yi` is @(List `T'I` List Integer)
+ is @(List `T'I` List Integer)
+  `hc` [[1,2,3],[],[4,5,6],[7,8,9]]
 
 main = do
  list_of_lists_example `yok` Plane `yokl` Forth `ha` Await `ha` print
