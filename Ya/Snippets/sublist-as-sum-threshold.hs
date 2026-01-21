@@ -15,7 +15,7 @@ step x = intro @(Stops `T'I` List Integer `JNT` State `T'I` List Integer `P` Int
   `lu__'yp` Apply `ha` State `hv__` Event `hv_` get `ha` that `ha` push x `ha_` Scope `hc` at @(List Integer)
  `yok____` Check `ha` limit
 
-test v items = print `hs_` No `hu` print "Not found!"
+test v items = print `has_` No `hu` print "Not found!"
  `hc____` items `yokl` Forth `ha` Apply `ha` step
   `hc___` empty @List `hjd` v
 

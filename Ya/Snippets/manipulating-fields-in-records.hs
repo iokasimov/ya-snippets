@@ -22,7 +22,7 @@ boolean_and_integer =
 
 print_integer = putStrLn `ha` show
 
-print_boolean = False `hu` putStrLn "False" `hs_` True `hu` putStrLn "True"
+print_boolean = False `hu` putStrLn "False" `has` True `hu` putStrLn "True"
 
 main = do
  is @(Integer `P` Boolean) `ho` at @Integer `ho` this `ho` print_integer `hc_` integer_and_boolean

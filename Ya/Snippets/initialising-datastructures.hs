@@ -7,7 +7,7 @@ import "ya-console" Ya.Console
 print x = x `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
 
 example_nonempty_list_1 :: Nonempty List Latin
-example_nonempty_list_1 = intro @(Nonempty List) @(AR) `hc'st` A
+example_nonempty_list_1 = A `ryo` is @Latin
 
 example_list_1 :: List Latin
 -- example_list_1 = intro @List @(AR) `hc'st` A

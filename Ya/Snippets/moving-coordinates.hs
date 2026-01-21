@@ -25,9 +25,9 @@ type Position = Integer `P` Integer
 
 -- move :: Direction `AR___` Position `AR_` Position
 -- move = ((+) `ho` (Scope `hc` at @Ordinate) `ho` (Scope `hc` at @Ordinate))
---  `hs_` Down `hu` identity
---  `hs_` Left `hu` identity
---  `hs_` Right `hu` identity
+--  `has_` Down `hu` identity
+--  `has_` Left `hu` identity
+--  `has_` Right `hu` identity
 
 -- pattern Ordinata e = This e
 -- pattern Abscissa e = This e
@@ -40,8 +40,8 @@ pattern Right e = That (This e)
 pattern Left e = That (That e)
 
 move :: Direction `AR___` Position `AR` Position
-move = Up `hu` (`yoi` (+) 1) `hs_` Down `hu` (`yoi` (-) 1)
- `hs__` Right `hu` (`yio` (+) 1) `hs_` Left `hu` (`yio` (-) 1)
+move = Up `hu` (`yoi` (+) 1) `has` Down `hu` (`yoi` (-) 1)
+ `has_` Right `hu` (`yio` (+) 1) `has` Left `hu` (`yio` (-) 1)
 
 test = move `hc'st` Up `hc___` 3 `hjd` 4
 

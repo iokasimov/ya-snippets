@@ -11,6 +11,6 @@ instance Setoid AR Integer where
 even x = (x `rem` 2) `hjd'q` 0 `yiu` x
 
 main = do
- [1,2,3,4,5,6] `yi` is @(List Integer)
-  `yok_` Check `ha__` Erase `hs_` Store `ha__` even
+ is @(List Integer) `hc` [1,2,3,4,5,6]
+  `yok_` Check `ha__` Erase `has_` Store `ha__` even
   `yokl` Forth `ha__` Await `ha` print
