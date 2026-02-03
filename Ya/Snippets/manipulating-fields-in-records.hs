@@ -9,10 +9,10 @@ import "base" System.IO (putStrLn)
 import "base" Text.Show (show)
 
 integer_and_boolean =
- 12345 `hjd` super True
+ 12345 `hjd` supertype True
 
 boolean_and_integer =
- super True `hjd` 12345
+ supertype True `hjd` 12345
 
 -- data Minutes
 -- data Seconds
@@ -31,7 +31,7 @@ main = do
  is @(Boolean `P` Integer) `ho` at @Boolean `ho` this `ho` print_boolean `hc_` boolean_and_integer
 
  -- integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Integer `ho` that `li` 54321 `yi` at @Integer `ho` this `ho` print_integer
- -- integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Boolean `ho` that `li` super True `yi` at @Boolean `ho` this `ho` print_boolean
+ -- integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Boolean `ho` that `li` supertype True `yi` at @Boolean `ho` this `ho` print_boolean
 
  -- minutes_integer_and_seconds_integer `yi` at @(Minutes # Integer) `ho` this `ho'st` print_integer
  -- minutes_integer_and_seconds_integer `yi` at @(Seconds # Integer) `ho` this `ho'st` print_integer
