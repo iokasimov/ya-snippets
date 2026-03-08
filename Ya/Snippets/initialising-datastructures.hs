@@ -6,30 +6,30 @@ import "ya-console" Ya.Console
 
 print x = x `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
 
-example_nonempty_list_1 = A `ryo` Enter @(Nonempty List) @Latin
+-- example_nonempty_list_1 = Only `hu'st` A `ryo` Enter @(Nonempty List) @Latin
 
 -- example_list_1 :: List Latin
 -- example_list_1 = intro @List @(AR) `hc'st` A
 -- example_list_1 = A `ryo` is @Latin
-example_list_1 = A `ryo` Enter @List @Latin
+example_list_1 = Only `hu'st` A `ryo` Enter @List @Latin
 
 -- example_nonempty_list_2 :: Nonempty List Latin
 -- example_nonempty_list_2 = empty @Maybe `hjd` A Unit `yi` Exist `hjd` B Unit `yi` Build
 
-example_nonempty_list_3 :: Nonempty List Latin
-example_nonempty_list_3 = is @(Nonempty List Latin)
- `ha___` push `hc'st` B `ho` that
- `ha___` push `hc'st` C `ho` that
- `hc___` A `ryo` Enter @(Nonempty List)
+-- example_nonempty_list_3 :: Nonempty List Latin
+-- example_nonempty_list_3 = is @(Nonempty List Latin)
+ -- `ha___` that `ha` push `har'st` B
+ -- `ha___` that `ha` push `har'st` C
+ -- `har__` Only `hu'st` A `ryo` Enter @(Nonempty List)
 
 example_list_2 :: List Latin
 example_list_2 = [supertype A, supertype B, supertype C]
 
-example_list_3 :: List Latin
-example_list_3 = is @(List Latin)
- `ha___` push `hc'st` B `ho` that
- `ha___` push `hc'st` C `ho` that
- `hc___` initial `ryo` Enter @List @Latin
+-- example_list_3 :: List Latin
+-- example_list_3 = is @(List Latin)
+ -- `ha___` push `har'st` B `ho` that
+ -- `ha___` push `har'st` C `ho` that
+ -- `har__` Null `hu'st` A `ryo` Enter @List
 
 main = do
  -- print example_nonempty_list_1
@@ -38,5 +38,5 @@ main = do
  -- print example_nonempty_list_2
  -- print example_list_2
 
- print example_nonempty_list_3
+ -- print example_nonempty_list_3
  print ([supertype B, supertype A] :: List Latin)

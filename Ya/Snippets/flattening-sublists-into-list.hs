@@ -9,11 +9,11 @@ import "base" System.IO (print)
 
 list_of_lists_example =
  is @(List `T'I` List Integer)
- `hc` [[1,2,3],[4,5,6],[7,8,9]]
+ `har` [[1,2,3],[4,5,6],[7,8,9]]
 
 list_of_lists_with_hole_example =
  is @(List `T'I` List Integer)
-  `hc` [[1,2,3],[],[4,5,6],[7,8,9]]
+  `har` [[1,2,3],[],[4,5,6],[7,8,9]]
 
 main = do
  list_of_lists_example `yok` Plane `yokl` Forth `ha` Await `ha` print

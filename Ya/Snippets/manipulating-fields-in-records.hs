@@ -9,10 +9,10 @@ import "base" System.IO (putStrLn)
 import "base" Text.Show (show)
 
 integer_and_boolean =
- 12345 `hjd` supertype True
+ is @(Integer `P` Boolean) `har_` 12345 `hjd` True Unit
 
 boolean_and_integer =
- supertype True `hjd` 12345
+ is @(Boolean `P` Integer) `har_` True `st'hjd` 12345
 
 -- data Minutes
 -- data Seconds
@@ -22,13 +22,13 @@ boolean_and_integer =
 
 print_integer = putStrLn `ha` show
 
-print_boolean = False `hu` putStrLn "False" `has` True `hu` putStrLn "True"
+print_boolean = False `hu` putStrLn "False" `bt'has` True `hu` putStrLn "True"
 
 main = do
- is @(Integer `P` Boolean) `ho` at @Integer `ho` this `ho` print_integer `hc_` integer_and_boolean
- is @(Integer `P` Boolean) `ho` at @Boolean `ho` this `ho` print_boolean `hc_` integer_and_boolean
- is @(Boolean `P` Integer) `ho` at @Integer `ho` this `ho` print_integer `hc_` boolean_and_integer
- is @(Boolean `P` Integer) `ho` at @Boolean `ho` this `ho` print_boolean `hc_` boolean_and_integer
+ is @(Integer `P` Boolean) `ho` field @Integer `ho` this `ho` print_integer `har` integer_and_boolean
+ is @(Integer `P` Boolean) `ho` field @Boolean `ho` this `ho` print_boolean `har` integer_and_boolean
+ is @(Boolean `P` Integer) `ho` field @Integer `ho` this `ho` print_integer `har` boolean_and_integer
+ is @(Boolean `P` Integer) `ho` field @Boolean `ho` this `ho` print_boolean `har` boolean_and_integer
 
  -- integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Integer `ho` that `li` 54321 `yi` at @Integer `ho` this `ho` print_integer
  -- integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Boolean `ho` that `li` supertype True `yi` at @Boolean `ho` this `ho` print_boolean

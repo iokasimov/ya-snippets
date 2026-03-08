@@ -43,6 +43,6 @@ move :: Direction `AR___` Position `AR` Position
 move = Up `hu` (`yoi` (+) 1) `has` Down `hu` (`yoi` (-) 1)
  `has_` Right `hu` (`yio` (+) 1) `has` Left `hu` (`yio` (-) 1)
 
-test = move `hc'st` Up `hc___` 3 `hjd` 4
+test = move `har'st` Up `har__` 3 `hjd` 4
 
 main = print "typechecked"

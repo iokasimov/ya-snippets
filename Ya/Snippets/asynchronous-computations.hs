@@ -11,20 +11,20 @@ delay s x = threadDelay (s * 1000000) `yo` x
 
 print x = x `yokl` Apply `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
 
-ab_1 = Enter `ha` delay 3 `hc` A
- `hjd'yp` Await `ha` delay 4 `hc` B
- `yok__` Await `ha` print `ha` Twice
+_ab_1 = Enter `ha` delay 3 `har` A
+ `hjd_'yp` Await `ha` delay 4 `har` B
+ `yok___` Await `ha` print `ha` Twice
 
-ab_2 = Enter `ha` delay 3 `hc` A
- `hjd'yp` Async `ha` delay 4 `hc` B
- `yok__` Await `ha` print `ha` Twice
+_ab_2 = Enter `ha` delay 3 `har` A
+ `hjd_'yp` Async `ha` delay 4 `har` B
+ `yok___` Await `ha` print `ha` Twice
 
-ab_3 = Enter `ha` delay 4 `hc` A
- `hjd'ys` Async `ha` delay 3 `hc` B
- `yok__` Await `ha` print `ha` Opted
+_ab_3 = Enter `ha` delay 4 `har` A
+ `hjd_'ys` Async `ha` delay 3 `har` B
+ `yok___` Await `ha` print `ha` Opted
 
--- ab_4 = Enter `ha` delay 4 `hc` A
- -- `hjd'ys` Await `ha` delay 3 `hc` B
+-- ab_4 = Enter `ha` delay 4 `har` A
+ -- `hjd'ys` Await `ha` delay 3 `har` B
  -- `yok_` Await `ha` print `ha` Opted
 
-main = ab_3
+main = _ab_3
