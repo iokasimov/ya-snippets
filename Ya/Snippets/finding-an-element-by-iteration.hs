@@ -9,11 +9,11 @@ print x = x `yokl` Forth `ha` Await `ha` output
 
 found x = print `ha` is @String
  `har` "[SUCCESS] Item has been found: "
- `yuk` Await `ha` print `har` x `yu` Unit
+ `yok'ut` Await `ha` print `har` x `yo'ut` Unit
 
 havent _ = print `ha` is @String
  `har` "[FAILURE] Item has not been found!"
- `yu` Unit
+ `yo'ut` Unit
 
 main = found `ha` Alone `ha` Glyph `ha` Letter `ha'st` Upper `bt'has` havent
  `har___'st` Enter @List [A,B,C,D,E,F,G]

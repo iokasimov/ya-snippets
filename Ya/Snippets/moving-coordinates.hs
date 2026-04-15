@@ -25,23 +25,24 @@ type Position = Integer `P` Integer
 
 -- move :: Direction `AR___` Position `AR_` Position
 -- move = ((+) `ho` (Scope `hc` at @Ordinate) `ho` (Scope `hc` at @Ordinate))
---  `has_` Down `hu` identity
---  `has_` Left `hu` identity
---  `has_` Right `hu` identity
+--  `has_` Down `ho'ut` identity
+--  `has_` Left `ho'ut` identity
+--  `has_` Right `ho'ut` identity
 
 -- pattern Ordinata e = This e
 -- pattern Abscissa e = This e
 
-type Direction = (Unit `S` Unit) `S` (Unit `S` Unit)
+type Direction = Unit `S` Unit `S_` Unit `S` Unit
 
-pattern Up e = This (This e)
-pattern Down e = This (That e)
-pattern Right e = That (This e)
-pattern Left e = That (That e)
+pattern Up, Down, Right, Left :: Unit `AR` Direction
+pattern Up x = This (This x)
+pattern Down x = This (That x)
+pattern Right x = That (This x)
+pattern Left x = That (That x)
 
 move :: Direction `AR___` Position `AR` Position
-move = Up `hu` (`yoi` (+) 1) `has` Down `hu` (`yoi` (-) 1)
- `has_` Right `hu` (`yio` (+) 1) `has` Left `hu` (`yio` (-) 1)
+move = Up `ho'ut` (`yoi` (+) 1) `has` Down `ho'ut` (`yoi` (-) 1)
+ `has_` Right `ho'ut` (`yio` (+) 1) `has` Left `ho'ut` (`yio` (-) 1)
 
 test = move `har'st` Up `har__` 3 `hjd` 4
 

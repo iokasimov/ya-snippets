@@ -12,40 +12,40 @@ v_3 = A `has` B `has` C `ryo` Enter @(Vector 3)
 v_4 = A `has` B `has` C `has` D `ryo` Enter @(Vector 4)
 v_5 = A `has` B `has` C `has` D `has` E `ryo` Enter @(Vector 5)
 
-m_54 = Pass `hu___` A `has` B `has` C `has` D `has` E `ryo` Enter
- `has___` Pass `hu___` F `has` G `has` H `has` I `has` K `ryo` Enter
- `has___` Pass `hu___` L `has` M `has` N `has` O `has` P `ryo` Enter
- `has___` Pass `hu___` Q `has` R `has` S `has` T `has` U `ryo` Enter
+m_54 = Pass `ho___'ut` A `has` B `has` C `has` D `has` E `ryo` Enter
+ `has___` Pass `ho___'ut` F `has` G `has` H `has` I `has` K `ryo` Enter
+ `has___` Pass `ho___'ut` L `has` M `has` N `has` O `has` P `ryo` Enter
+ `has___` Pass `ho___'ut` Q `has` R `has` S `has` T `has` U `ryo` Enter
  `__ryo` Enter @(Matrix 5 4) `ha` Forge
 
-m_45 = Pass `hu___` A `has` B `has` C `has` D `ryo` Enter
- `has___` Pass `hu___` E `has` F `has` G `has` H `ryo` Enter
- `has___` Pass `hu___` I `has` K `has` L `has` M `ryo` Enter
- `has___` Pass `hu___` N `has` O `has` P `has` Q `ryo` Enter
- `has___` Pass `hu___` R `has` S `has` T `has` U `ryo` Enter
+m_45 = Pass `ho___'ut` A `has` B `has` C `has` D `ryo` Enter
+ `has___` Pass `ho___'ut` E `has` F `has` G `has` H `ryo` Enter
+ `has___` Pass `ho___'ut` I `has` K `has` L `has` M `ryo` Enter
+ `has___` Pass `ho___'ut` N `has` O `has` P `has` Q `ryo` Enter
+ `has___` Pass `ho___'ut` R `has` S `has` T `has` U `ryo` Enter
  `__ryo` Enter @(Matrix 4 5) `ha` Forge
 
-t_11 = is @(N 1 `P` N 1) `ho___'st` A `_ryo` Enter @(Tensor [1,1])
-t_12 = is @(N 2 `P` N 1) `ho___'st` A `has` B `_ryo` Enter @(Tensor [1,2])
-t_21 = is @(N 1 `P` N 2) `ho___'st` A `has` B `_ryo` Enter @(Tensor [2,1])
-t_31 = is @(N 1 `P` N 3) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [3,1])
-t_13 = is @(N 3 `P` N 1) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [1,3])
-t_14 = is @(N 4 `P` N 1) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [1,4])
-t_41 = is @(N 1 `P` N 4) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [4,1])
-t_22 = is @(N 2 `P` N 2) `ho___'st` A `has` B `has_` C `has` D `_ryo` Enter @(Tensor [2,2])
-t_23 = is @(N 2 `P` N 3) `ho___'st` A `has` B `has` C `has_` D `has` E `has` F `_ryo` Enter @(Tensor [3,2])
-t_32 = is @(N 3 `P` N 2) `ho___'st` A `has` B `has_` C `has` D `has_` E `has` F `_ryo` Enter @(Tensor [2,3])
-t_33 = is @(N 3 `P` N 3) `ho___'st` A `has` B `has` C `has_` D `has` E `has` F `has_` G `has` H `has` I `_ryo` Enter @(Tensor [3,3])
+t_11 = is @(Size 1 `P` Size 1) `ho___'st` A `_ryo` Enter @(Tensor [1,1])
+t_12 = is @(Size 2 `P` Size 1) `ho___'st` A `has` B `_ryo` Enter @(Tensor [1,2])
+t_21 = is @(Size 1 `P` Size 2) `ho___'st` A `has` B `_ryo` Enter @(Tensor [2,1])
+t_31 = is @(Size 1 `P` Size 3) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [3,1])
+t_13 = is @(Size 3 `P` Size 1) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [1,3])
+t_14 = is @(Size 4 `P` Size 1) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [1,4])
+t_41 = is @(Size 1 `P` Size 4) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [4,1])
+t_22 = is @(Size 2 `P` Size 2) `ho___'st` A `has` B `has_` C `has` D `_ryo` Enter @(Tensor [2,2])
+t_23 = is @(Size 2 `P` Size 3) `ho___'st` A `has` B `has` C `has_` D `has` E `has` F `_ryo` Enter @(Tensor [3,2])
+t_32 = is @(Size 3 `P` Size 2) `ho___'st` A `has` B `has_` C `has` D `has_` E `has` F `_ryo` Enter @(Tensor [2,3])
+t_33 = is @(Size 3 `P` Size 3) `ho___'st` A `has` B `has` C `has_` D `has` E `has` F `has_` G `has` H `has` I `_ryo` Enter @(Tensor [3,3])
 
-t_111 = is @(N 1 `P` N 1 `P` N 1) `ho___'st` A `_ryo` Enter @(Tensor [1,1,1])
-t_112 = is @(N 2 `P` N 1 `P` N 1) `ho___'st` A `has` B `_ryo` Enter @(Tensor [1,1,2])
-t_121 = is @(N 1 `P` N 2 `P` N 1) `ho___'st` A `has` B `_ryo` Enter @(Tensor [1,2,1])
-t_113 = is @(N 3 `P` N 1 `P` N 1) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [1,1,3])
-t_131 = is @(N 1 `P` N 3 `P` N 1) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [1,3,1])
-t_123 = is @(N 3 `P` N 2 `P` N 1) `ho___'st` A `has` B `has_` C `has` D `has_` E `has` F `_ryo` Enter @(Tensor [1,2,3])
-t_132 = is @(N 2 `P` N 3 `P` N 1) `ho___'st` A `has` B `has` C `has_` D `has` E `has` F `_ryo` Enter @(Tensor [1,3,2])
-t_114 = is @(N 4 `P` N 1 `P` N 1) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [1,1,4])
-t_141 = is @(N 1 `P` N 4 `P` N 1) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [1,4,1])
+t_111 = is @(Size 1 `P` Size 1 `P` Size 1) `ho___'st` A `_ryo` Enter @(Tensor [1,1,1])
+t_112 = is @(Size 2 `P` Size 1 `P` Size 1) `ho___'st` A `has` B `_ryo` Enter @(Tensor [1,1,2])
+t_121 = is @(Size 1 `P` Size 2 `P` Size 1) `ho___'st` A `has` B `_ryo` Enter @(Tensor [1,2,1])
+t_113 = is @(Size 3 `P` Size 1 `P` Size 1) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [1,1,3])
+t_131 = is @(Size 1 `P` Size 3 `P` Size 1) `ho___'st` A `has` B `has` C `_ryo` Enter @(Tensor [1,3,1])
+t_123 = is @(Size 3 `P` Size 2 `P` Size 1) `ho___'st` A `has` B `has_` C `has` D `has_` E `has` F `_ryo` Enter @(Tensor [1,2,3])
+t_132 = is @(Size 2 `P` Size 3 `P` Size 1) `ho___'st` A `has` B `has` C `has_` D `has` E `has` F `_ryo` Enter @(Tensor [1,3,2])
+t_114 = is @(Size 4 `P` Size 1 `P` Size 1) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [1,1,4])
+t_141 = is @(Size 1 `P` Size 4 `P` Size 1) `ho___'st` A `has` B `has` C `has` D `_ryo` Enter @(Tensor [1,4,1])
 
 
 t_11' = Slots @[1,1] `ho___'st` A `_ryo` Tensor @[1,1]
@@ -113,7 +113,7 @@ x_10 :: Vector 5 (Vector 5 Latin)
 x_10 = v_5 `kyo` Level
 
 main = do
- R `ryu` Enter @World
+ Pass `ho'ut` R `ryo` Enter @World
  v_1 `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
  output `ha` Caret `har'st` Tab
  v_2 `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
