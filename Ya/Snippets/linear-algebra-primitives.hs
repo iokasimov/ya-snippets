@@ -173,9 +173,15 @@ main = do
  output `ha` Glyph `ha` Letter `ha` Upper `har___` t_23' `yor` That `hop` This `ha` That `har` Unit
  output `ha` Glyph `ha` Letter `ha` Upper `har___` t_23' `yor` That `hop` That `har` Unit
 
+ -- TODO: define `Prior` behaviour here
+
  {-
  output `ha` Caret `har'st` Tab
 
+ mutate `ha` Adapt @(Vector 5) @List `har` v_5
+  `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+ -}
+ {-
  mutate `ha` Merge @(Tensor [4,3,2,1]) @(Nonempty List) `ha` Clasp
   `har___` t_4321' `hjd__` Y `ryo` Enter @(Nonempty List)
   `yokl__` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
