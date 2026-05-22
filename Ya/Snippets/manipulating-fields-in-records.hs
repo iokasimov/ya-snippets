@@ -25,10 +25,10 @@ print_integer = putStrLn `ha` show
 print_boolean = False `ho'ut` putStrLn "False" `bt'has` True `ho'ut` putStrLn "True"
 
 main = do
- is @(Integer `P` Boolean) `ho` field @Integer `ho` this `ho` print_integer `har` integer_and_boolean
- is @(Integer `P` Boolean) `ho` field @Boolean `ho` this `ho` print_boolean `har` integer_and_boolean
- is @(Boolean `P` Integer) `ho` field @Integer `ho` this `ho` print_integer `har` boolean_and_integer
- is @(Boolean `P` Integer) `ho` field @Boolean `ho` this `ho` print_boolean `har` boolean_and_integer
+ is @(Integer `P` Boolean) `ho` record @Integer `ho` this `ho` print_integer `har` integer_and_boolean
+ is @(Integer `P` Boolean) `ho` record @Boolean `ho` this `ho` print_boolean `har` integer_and_boolean
+ is @(Boolean `P` Integer) `ho` record @Integer `ho` this `ho` print_integer `har` boolean_and_integer
+ is @(Boolean `P` Integer) `ho` record @Boolean `ho` this `ho` print_boolean `har` boolean_and_integer
 
  -- integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Integer `ho` that `li` 54321 `yi` at @Integer `ho` this `ho` print_integer
  -- integer_and_boolean `yi` is @(Integer `P` Boolean) `ho` at @Boolean `ho` that `li` supertype True `yi` at @Boolean `ho` this `ho` print_boolean

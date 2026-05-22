@@ -15,6 +15,6 @@ havent _ = print `ha` is @String
  `har` "[FAILURE] Item has not been found!"
  `yo'ut` Unit
 
-main = found `ha` Alone `ha` Glyph `ha` Letter `ha'st` Upper `bt'has` havent
- `har___'st` Enter @List [A,B,C,D,E,F,G]
-     `yokl` Forth `ha` Check `ha` Stops `ha` not `ha'hjd'eq` F
+main = found `ha` Alone `ha` Glyph `ha` Letter `ha` Upper `bt'has` havent
+ `har______'st` W `has__` O `has_` R `has` D `____ryo` Enter @List
+     `yokl___` Forth `ha` Check `ha__` Ok `has` Break `ha_'hjd'eq` F Unit

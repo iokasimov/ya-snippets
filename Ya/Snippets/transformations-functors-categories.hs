@@ -4,9 +4,6 @@ import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 import "ya-literal" Ya.Literal
 
-import "base" GHC.Num (Integer, (+), (-))
-import "base" System.IO (print)
-
 type Data = Nonempty List ASCII
 
 type File = Data `P` Name
@@ -17,8 +14,8 @@ type Type = Nonempty List Letter
 
 type Name = Base `P` Type
 
-head :: List `C'AR` Maybe
-head = derive `ha` First
+-- head :: List `C'AR` Maybe
+-- head = derive `ha` First
 
 name :: File `AR` Name
 name = that
@@ -30,7 +27,7 @@ natural_transformation_component_functor :: List File `AR` Maybe Name
 natural_transformation_component_functor = (derive `ha` First :: List File `AR` Maybe File) `ho'yo` name
 
 natural_transformation_functor_component :: List File `AR` Maybe Name
-natural_transformation_functor_component = (head :: List Name `AR` Maybe Name) `ha'yo` name
+natural_transformation_functor_component = (derive `ha` First :: List Name `AR` Maybe Name) `ha'yo` name
 
 fmcm :: List File `AR` List Base
 fmcm = (`yo` name `ho` base)
@@ -44,11 +41,10 @@ fmcfm' = Same `ho'yo` name `ho'yo` base
 file_object = "Meditate" `hjd_` "Habits tracker" `hjd` "txt" :: File
 
 x :: Base
-x = Scope `har` field @Base `ha__` Scope `har` field @Name `har_` file_object
+x = Scope `har` record @Base `ha__` Scope `har` record @Name `har_` file_object
 
 x' :: Base `AR` File
--- x' :: File
-x' = Scope `har` field @Base `ha__` Scope `har` field @Name `bt'har_` file_object `yior` Unit
+x' = Scope `har` record @Base `ha__` Scope `har` record @Name `bt'har_` file_object `yior` Unit
 
 x'' :: File `AT` Name
 x'' = Scope `har_` name `hop` (yio'ut)
@@ -60,6 +56,7 @@ name_event :: File `TR` Name
 name_event = Event (\(These d n) -> These n (These "12345" ("TXT" `hjd` "world")))
 
 main = do
+ {-
  base `ha` name `har_` file_object
   `yokl` Forth `ha` Await `ha` output `ha` Glyph
 
@@ -142,7 +139,37 @@ main = do
  Event `har_` Pull
   `hor__` Only `ho'ut'st` A `ryo` Enter @List
   `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+ -}
 
- Event `ha` Push `har'st` Empty `ha__` Scope `har` within @List @Maybe `ha` First
+ {-
+ Event `ha` Swap `har'st` Empty `ha__` Scope `har` within @List @Maybe `ha` First
   `bt'har__` Null `ho'vt` Unit `ryo` Enter
   `yior` Unit `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+ output `ha` Caret `har'st` Tab
+
+ Event `ha` Swap `har'st` Exist `ha` X `ha__` Scope `har` within `ha` Fresh
+  `bt'har__` Null `ho'vt` Unit `ryo` Enter
+  `yior` Unit `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+ output `ha` Caret `har'st` Tab
+ -}
+
+ Event `ha` Swap `har'st` Exist `ha` X `ha__` Scope `har` within `ha` First
+  `bt'har__` Both `ho__` A `has` B `ryo` Enter @List `yior` Unit
+  `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+ output `ha` Caret `har'st` Tab
+
+ Event `ha` Swap `har'st` Exist `ha` X `ha__` Scope `har` within `ha` Fresh
+  `bt'har__` Only `ho` A `ryo` Enter @(Nonempty List) `yior` Unit
+  `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+ output `ha` Caret `har'st` Tab
+
+ {-
+ Both `ho__` A `has` B `ryo` Enter @List
+  `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+ print `ha` Caret `har'st` Tab
+ -}
