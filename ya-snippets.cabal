@@ -20,8 +20,22 @@ executable components-of-natural-transformations
   default-language: Haskell2010
   ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
 
+executable jointed-functor-compositions
+  main-is: Ya/Snippets/jointed-functor-compositions.hs
+  build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, base, ghc-prim
+  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  default-language: Haskell2010
+  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+
 executable initialising-datastructures
   main-is: Ya/Snippets/initialising-datastructures.hs
+  build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, base, ghc-prim, ghc-internal
+  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  default-language: Haskell2010
+  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+
+executable statefulness-and-reachability
+  main-is: Ya/Snippets/statefulness-and-reachability.hs
   build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, base, ghc-prim
   default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
   default-language: Haskell2010
